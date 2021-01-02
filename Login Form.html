@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        background-image: url(./img/student-849825_960_720.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    header {
+        display: grid;
+        margin: auto;
+        margin-bottom: 15px;
+        background-color: rgba(228, 10, 217, 0.37);
+        border: 2px solid white;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    form {
+        width: 400px;
+        height: 450px;
+        margin-top: 25px;
+        margin: auto;
+        padding-top: 10;
+        background-color: rgba(228, 10, 217, 0.37);
+        border: 2px solid white;
+        border-radius: 20px;
+
+    }
+
+    table {
+        margin-top: 25px;
+        margin-left: 15px;
+
+    }
+    .button{
+        padding-top: 30px;
+        width: 108px;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header>Login Form</header>
+
+    <form>
+        <table>
+            <tr>
+                <td><label for="Email Add:">Email Add:</label></td>
+                <td><input type="Email" name="Custmemail" id="Email Add:" placeholder="Email id"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Password:">Password:</label></td>
+                <td><input type="password" name="Custmpassword" id="Password:" placeholder="Password"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Select Technology:">Select Technology:</label>
+                </td>
+                <td>
+                    <select name="Selected Technology" id="Select Technology:">
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JAVA">JAVA</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Choose Your Tech:">Choose Your Tech:</label>
+                </td>
+                <td>
+                    <select name="Selected Technology" id="Select Technology:">
+                        <option value="JAVA">JAVA</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Howz Nanded's Weather:">Howz Nanded's Weather:</label></td>
+                <td>
+                    <input type="radio" name="Weather" id="Hows Nanded's Weather:">
+                    <label for="Good">Good</label>
+                    <input type="radio" name="Weather" id="Hows Nanded's Weather:">
+                    <label for="Bad">Bad</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Your Hobbies:">Your Hobbies:</label></td>
+                <td>
+                    <input type="checkbox" name="Hobbies" id="Your Hobbies:" value="Eating">
+                    <label for="Your Hobbies:">Eating</label>
+
+                    <input type="checkbox" name="Hobbies" id="Your Hobbies:">
+                    <label for="Your Hobbies:">Coding</label>
+
+                    <input type="checkbox" name="Hobbies" id="Your Hobbies:">
+                    <label for="Your Hobbies:">Sleeping</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Time">Time:</label></td>
+                <td><input type="datetime-local" name="Time" id="Time:"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Email">Email Requird:</label></td>
+                <td><input type="email" name="email" id="email" pattern="+@Email Requird:"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Select Number">Select Number:</label>
+                </td>
+                <td><input type="number" name="Select Number" id="Select Number" max="10"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Url">Your Web Url:</label></td>
+                <td><input type="url" name="url" id="url"></td>
+            </tr>
+
+            <tr>
+                <td><label for="File">Choose Your File:</label></td>
+                <td><input type="file" name="file" id="file"></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td><label for="Comments">Your Comments:</label>
+                </td>
+                <td>
+                    <textarea name="Comments" id="Comments" cols="20" rows="2"></textarea>
+                </td>
+            </tr>
+
+        </table>
+        <div class="button">
+            <input type="button" value="Log in">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
