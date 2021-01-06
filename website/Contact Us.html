@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abcd.com</title>
+</head>
+<style>
+    body{
+        width: auto;
+        background-image: url(./img/businessman-3210932__340.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    form {
+        margin-top: 25px;
+        display: block;
+        width:400px;
+        margin: auto;
+        text-align: justify;
+        background-color: rgba(243, 3, 103, 0.534);
+         border: 3px solid white;
+         border-radius: 18px;
+         border: 2ps solid white;
+  
+        
+    }
+
+    table {
+        width: 290px;
+        margin-left: 30px;
+        text-align: left;
+    }
+    .box{margin-left: 30px;
+        text-align: justify;
+    padding: 04px;
+    }
+
+        .button {
+        display: flex;
+        width: 150px;
+        height: 30px;
+        margin: auto
+    }
+    nav {
+        box-shadow: 0 0 10px black;
+        background: linear-gradient(45deg, violet, limegreen);
+        padding: 10px;
+        height: 15px;
+        margin-bottom: 20px;
+        border: 2px solid black;
+        border-radius: 50px;
+    }
+    
+    nav a {
+        display: inline block;
+        text-decoration: none;
+        padding: 5px;
+
+    }
+
+
+    nav a:hover{
+        border-radius: 10px;
+        background: white;
+        color: limegreen;
+    }
+
+
+
+</style>
+<body>
+
+    <nav>
+        <a href="website.html">Home</a>
+        <a href="">About Us</a>
+        <a href="">Contact Us</a>
+    </nav>
+
+    <form>
+
+        <h2 style="text-align: center;">Personal Details</h2>
+
+        <table>
+            <tr>
+                <td><label>First Name:</label></td>
+                <td><input type="text"></td>
+            </tr>
+           
+            <tr>
+                <td><label>Last Name:</label></td>
+                <td><input type="text"></td>
+            </tr>
+           
+            <tr>
+                <td><Label>Email:</Label></td>
+                <td><input type="email"></td>
+            </tr>
+        </table><br>
+
+        <div class="box">
+            <label for="Date">Date of Birth:</label>
+            <input type="date" name="Date of Birth:" id="Date of Birh:" min="1980-01-01" max="2021-12-31">
+        </div>
+
+        <div class="box">
+            <label>Select Gender:</label>
+
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="Male">Male</label>
+
+            <input type="radio" name="gender" id="Female" value="Female">
+            <label for="Feale">Female</label>
+
+            <input type="radio" name="gender" id="Other" value="Other">
+            <label for="Other">Other</label>
+        </div>
+
+        <div class="button" style="align-items: center; text-align: center;">
+            <input type="submit" value="Submitt" style="margin-right: 30px;" s>
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+</body>
+</html>
