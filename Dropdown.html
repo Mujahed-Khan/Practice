@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav {
+        box-shadow: 0 0 5px;
+        padding: 20px;
+    }
+
+    nav a {
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        background: palevioletred;
+    }
+
+    .dropdown-list a {
+        background: peru;
+        display: block;
+
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+
+    .dropdown-list {
+        position: absolute;
+        padding: 5px;
+        width: 180px;
+        margin-top: 5px;
+        display: none;
+        color: white;
+    }
+
+    nav a:hover {
+        background-image: linear-gradient(45deg red blue black);
+        box-shadow: 0 0 5px black;
+    }
+
+    .dropdown:hover .dropdown-list {
+        display: block;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <nav>
+        <a href="">Home</a>
+        <a href="">Services</a>
+        <a href="">Pages</a>
+
+        <div class="dropdown">
+            <a href="">Items</a>
+
+            <div class="dropdown-list">
+                <a href="">item1</a>
+                <a href="">item2</a>
+                <a href="">item3</a>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

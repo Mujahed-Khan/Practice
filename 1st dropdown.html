@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    nav{
+        background-color: cyan;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+    }
+    .anchor{
+        display: inline-block;
+
+    }
+    .anchor a{
+        display: block;
+        box-shadow: 0 0 2px;
+        padding: 10px;
+        text-decoration: none;
+    }
+    .anchor a:hover{
+        box-shadow: 0 0 8px;
+        border-radius: 15px;
+    }
+    .dropdown{
+        display: none;
+        position: absolute;
+        padding: 5px;
+        width: 180px;
+        margin-top: 3px;
+    }
+    .anchor:hover .dropdown{
+        display:block;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <nav>
+            <div class="anchor">
+                <a href="">Home</a>
+                <div class="dropdown">
+                    
+                </div>
+            </div>
+            <div class="anchor">
+                <a href="">Courses</a>
+                <div class="dropdown">
+                    <a href="">HTML</a>
+                    <a href="">CSS</a>
+                    <a href="">JAVA</a>
+                    
+                </div>
+            </div>
+            <div class="anchor">
+                <a href="">Front-end</a>
+                <div class="dropdown">
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="anchor">
+                <a href="">Back-end</a>
+                <div class="dropdown">
+                    
+                </div>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

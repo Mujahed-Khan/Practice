@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <style>
     body {
         background-image: url(./img/christopher-gower-m_HRfLhgABo-unsplash.jpg);
@@ -15,34 +15,33 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-
     }
-
     nav {
         padding: 15px;
         box-shadow: 0 0 5px black;
     }
-
     nav a {
         text-decoration: none;
         padding: 10px 18px;
         color: black;
     }
-
     a:hover {
         color: white;
         background-color: rgba(95, 158, 160, 0.493);
         border-radius: 30px;
     }
+    .home{
+        color: white;
+        background-color: rgba(95, 158, 160, 0.493);
+        border-radius: 30px;
 
+    }
     h1 {
         box-shadow: 0 0 10px black;
         width: 300px;
         margin: 25px 100px;
         text-align: center;
-
     }
-
     .para1 {
         padding: 15px;
         margin: 25px 100px;
@@ -50,11 +49,10 @@
         text-align: center;
         text-align: justify;
         background-color: rgba(100, 148, 237, 0.719);
-        box-shadow: 0 0 20px black;
+        box-shadow: 10px 0 30px black;
         /* border:3px solid cyan; */
         border-radius: 50px 1px;
     }
-
     .box {
         background-image: url(./img/laptop.webp);
         background-blend-mode: difference;
@@ -67,7 +65,6 @@
         background-position: center;
         border-radius: 1px 50px;
     }
-
     form {
         background-color: rgba(18, 179, 243, 0.658);
         box-shadow: 0 10px 20px black;
@@ -75,36 +72,47 @@
         margin: 5px 340px;
         border-radius: 20px;
     }
-
     table {
+
         padding: 10px;
     }
-
     .photos {
         margin: 50px;
     }
-
     figure {
         display: inline-block;
         margin: 54px;
         border: 3px solid black;
     }
-
     figcaption {
         text-align: center;
         background-color: rgba(221, 100, 237, 0.719);
-
     }
     footer{
-        text-align: center;
+        font-size: 15px;
         background-color: rgba(128, 128, 128, 0.89);
         padding: 15px;
+        border-radius: 20px;
+    }
+    i{
+        background-color: snow;
+        padding: 5px 10px;
+        border-radius: 10px;
+        box-shadow: 0 10px 5px black;
+    }
+    #fac{
+        color: blue;
+    }
+    #ins{
+        color: darkmagenta;
+    }
+    #twt{
+        color: rgb(101, 223, 223);
     }
 </style>
-
 <body>
     <nav>
-        <a href="">Home</a>
+        <a class="home" href="">Home</a>
         <a href="">Services</a>
         <a href="">Our products</a>
         <a href="">About</a>
@@ -112,7 +120,6 @@
         <a href="">More..</a>
     </nav>
     <div>
-
         <h1><span style="color: blueviolet;"> <u>Welcome</u></span> to <span style="color: red;">C</span><span
                 style="color: green;">S</span><span style="color: blue;">S</span></h1>
         <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor est praesentium fugiat
@@ -139,15 +146,12 @@
             possimus iusto cumque eligendi. </p>
     </div>
     <div class="box">
-        <!-- <marquee behavior="" direction="left"><img src="./img/7-plane-png-image.png" alt="" width="500px" height="150px"></marquee> -->
+        <marquee behavior="" direction="left" scrollamount="50%"><img src="./img/7-plane-png-image.png" alt="" width="500px" height="150px"></marquee>
         <fieldset>
-
             <legend style="color: blue;">
                 <h2><b><i>Login form</i></b></h2>
             </legend>
-            <form>
-                <center>
-
+            <form>           
                     <table>
                         <tr>
                             <td><label for="Name">Name:</label></td>
@@ -170,8 +174,11 @@
                                 <input type="radio" name="gender" id="Female" value="Female">
                                 <label for="gender">Other</label>
                                 <input type="radio" name="gender" id="Other" value="Other">
-
                             </td>
+                        </tr>
+                        <tr>
+                            <td><label for="dob">D.O.B.</label></td>
+                            <td><input type="date" name="" id=""></td>
                         </tr>
                         <tr>
                             <td><label for="Profession">Profession:</label></td>
@@ -181,7 +188,6 @@
                                     <option value="Employe">Employe</option>
                                     <option value="Student">Student</option>
                                 </select>
-
                             </td>
                         </tr>
                         <tr>
@@ -200,19 +206,17 @@
                             <td><input type="number" name="Experience" id="" min="0" max="5"></td>
                         </tr>
 
+                        <td>
+                        </td>
+                        <td>
+                            <input type="submit" value="Login">
+                            <input type="reset" value="Reset">
+                        </td>
+                        <td>
+
+                        </td>
                     </table>
-
-
-                    <input type="submit" value="Login">
-
-
-                    <input type="reset" value="Reset">
-
-
-
-                </center>
             </form>
-
         </fieldset>
     </div>
     <div class="photos">
@@ -228,10 +232,12 @@
     <hr>
     <div>
         <footer>
-        
-            <p>All rights&copy; reserved. Pickupbiz &reg; private limited. </p>
+            <p>All rights&copy;
+            Reserved by Pickupbiz <sup>&reg;</sup></p><br>
+            <i id="fac" class="fa fa-facebook">  Mujahed Khan  </i>
+            <i id="ins"class="fa fa-instagram" > pmujahedk  </i>
+            <i id="twt"class="fa fa-twitter"> pm_khan  </i>         
         </footer>
     </div>
 </body>
-
 </html>
